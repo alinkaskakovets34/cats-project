@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-    <title>Коти</title>
+    <meta charset="UTF-8">
+    <title>Котячий Генератор Паролів 🐱</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="container">
     <h1>Мій сайт про котів 🐱</h1>
-    <p>Я люблю котів!</p>
+    <p>Мій котик згенерує для тебе надійний пароль!</p>
+
+    <div class="password-box">
+        <input type="text" id="password-display" readonly placeholder="Тут буде пароль">
+    </div>
+
+    <div class="settings">
+        <label for="length">Довжина: <span id="length-value">12</span></label>
+        <input type="range" id="length-slider" min="8" max="30" value="12">
+    </div>
+
+    <button id="generate-btn">Згенерувати лапками 🐾</button>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
